@@ -1,43 +1,38 @@
 body {
-  background-color: #f0f0f0; /* Professional-looking background color */
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Dark background color */
+  color: #f5f5f5; /* Light text color */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes up at least the full height of the viewport */
 }
 
 .container {
-  max-width: 600px;
-  margin: 50px auto; /* Center the container */
+  flex: 1; /* Grow to fill remaining vertical space */
+  max-width: 800px;
+  margin: 50px auto;
   padding: 20px;
-  background-color: #ffffff; /* White background for the container */
-  border-radius: 10px; /* Rounded corners for a modern look */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Drop shadow for depth */
+  background-color: #1f1f1f; /* Darker background for the container */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
 }
 
-h1 {
+.about-us {
+  padding: 20px;
+  background-color: #1f1f1f; /* Darker background for about us section */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.footer {
+  margin-top: auto; /* Push the footer to the bottom */
+  padding: 10px;
+  background-color: #1f1f1f; /* Darker background for the footer */
   text-align: center;
 }
 
-textarea {
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #ccc; /* Light border */
-  border-radius: 5px; /* Rounded corners for text area */
-}
-
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: #007bff; /* Blue button color */
-  color: #fff; /* White text color */
-  border: none;
-  border-radius: 5px;
-}
-
-button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-}
-
-#outputText {
-  margin-top: 20px;
+.footer p {
+  margin: 0;
 }

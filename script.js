@@ -53,3 +53,4 @@ async function getSynonym(word) {
     return word; // If synonym not found, return the original word
   }
 }
+

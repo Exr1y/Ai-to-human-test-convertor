@@ -9,30 +9,35 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f5f5f5;
+      background-color: #121212; /* Dark background color */
+      color: #f5f5f5; /* Light text color */
+      min-height: 100vh; /* Ensure the body covers the entire viewport height */
+      position: relative; /* Set body position to relative */
     }
 
     .container {
       max-width: 800px;
       margin: 50px auto;
       padding: 20px;
-      background-color: #fff;
+      background-color: #1f1f1f; /* Darker background for the container */
       border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
     }
 
     h1 {
       text-align: center;
-      color: #333;
+      color: #f5f5f5; /* Light text color */
     }
 
-    textarea {
-      width: 100%;
+    textarea, #outputText {
+      width: calc(100% - 22px); /* Same width for both input and output */
       padding: 10px;
       margin-top: 10px;
-      border: 1px solid #ccc;
+      border: 1px solid #333; /* Darker border color */
       border-radius: 5px;
       resize: vertical;
+      background-color: #2e2e2e; /* Darker background for text area */
+      color: #f5f5f5; /* Light text color */
     }
 
     button {
@@ -40,22 +45,25 @@
       width: 100%;
       padding: 10px;
       margin-top: 10px;
-      background-color: #007bff;
-      color: #fff;
+      background-color: #007bff; /* Blue button color */
+      color: #f5f5f5; /* Light text color */
       border: none;
       border-radius: 5px;
       cursor: pointer;
     }
 
     button:hover {
-      background-color: #0056b3;
+      background-color: #0056b3; /* Darker blue on hover */
     }
 
-    #outputText {
-      margin-top: 20px;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+    .footer {
+      position: absolute; /* Set footer position to absolute */
+      bottom: 0; /* Align footer to the bottom */
+      width: 100%;
+      background-color: #1f1f1f; /* Darker background for footer */
+      padding: 20px;
+      text-align: center;
+      color: #ccc; /* Lighter text color */
     }
   </style>
 </head>
@@ -65,6 +73,11 @@
     <textarea id="textInput" rows="10" placeholder="Enter text (up to 1000 words)..."></textarea>
     <button onclick="convertText()">Convert</button>
     <div id="outputText"></div>
+  </div>
+
+  <div class="footer">
+    <h2>Why is this useful?</h2>
+    <p>In today's fast-paced digital world, effective communication is essential across various domains, yet not everyone possesses proficient writing skills, leading to challenges in articulating thoughts accurately. Enter Artificial Intelligence (AI) to human text conversion websites, revolutionizing communication by breaking language barriers and enhancing inclusivity. These platforms streamline content creation, boosting productivity by converting ideas into polished text efficiently. Moreover, they serve as valuable tools for language learning, offering real-time feedback on grammar and vocabulary. With customizable features and collaborative functionalities, AI-driven conversion websites facilitate seamless teamwork, ensuring high-quality outputs. In conclusion, these platforms empower users to communicate effectively, promising continued advancement in written communication and fostering innovation in various sectors.</p>
   </div>
 </body>
 </html>
